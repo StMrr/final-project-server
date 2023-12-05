@@ -25,16 +25,18 @@ const seedDB = async () => {
 		address: "2900 Bedford Ave, Brooklyn, NY 11210",
 		description: "This is a school in Brooklyn, New York."
 	});
-	
+
 	// Create a new student for a campus
 	const dummy_student = await Student.create({
 		firstname: "Joe",
       lastname: "Smith",
+			email: "joesmith@gmail.com"
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
       lastname: "Johnson",
+			email: "maryjohnson@gmail.com"
 	});
 
 	// Add students to campuses
