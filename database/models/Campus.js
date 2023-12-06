@@ -20,6 +20,12 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    defaultValue: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Morgan_Hall_of_Williams_College_in_the_fall_%2827_October_2010%29.jpg",
+    allowNull: true
   }
 });
 
