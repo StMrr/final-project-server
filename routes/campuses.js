@@ -57,7 +57,10 @@ router.post('/', ash(async(req, res) => {
 router.put('/:id', ash(async(req, res) => {
   await Campus.update(req.body, {
     where: {
-      id: req.params.id
+      id: req.params.id,
+      address: req.params.address,
+      description: req.params.description,
+      imageUrl: req.params.imageUrl
     }
   });
   // Find campus by Primary Key
